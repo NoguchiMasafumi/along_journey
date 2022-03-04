@@ -1,11 +1,15 @@
-        <div id="content">
-            <div id="content_title" class="main_cont">
-                <div v-for="item in items" class="over_flow_no link_card">
-                        <h2>{{ item.title }}</h2>
-                </div>
-            </div>
+    <style>
+        [v-cloak]{display:none;}
+    </style>
 
+
+    <div id="content">
+        <div id="content_title" class="main_cont" v-cloak>
+            <div v-for="item in items" class="over_flow_no link_card">
+                <h2>{{ item.title }}</h2>
+            </div>
         </div>
+    </div>
 
 
 
